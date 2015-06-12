@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
   def index
     if current_user && current_user[:role] == 1
+      @users = User.all
     else
       not_found
     end
