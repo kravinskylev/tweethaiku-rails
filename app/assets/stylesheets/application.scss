@@ -1,0 +1,65 @@
+@import "materialize";
+@import "application.css";
+
+html {
+    background: url(paper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+  }
+
+.tweethaiku {
+    font-family: 'Seaweed Script', cursive;
+    display: inline-block;
+    color: #55ACEE;
+  }
+
+
+ul .navbar {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+  }
+
+.navbar a:link {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-color:white;
+  }
+
+.navbar a:link {
+   color:#FFFFFF;
+  }
+
+
+li {
+    display: inline-block;
+    margin:0;
+    padding:0;
+    background-color: #55ACEE;
+    text-color:#FFFFFF;
+  }
+
+.nav-item {
+  text-color:white;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: white ;
+}
+
+a:hover {
+  color:#fdfd96;
+}
+
+.create a:link {
+    color:#55ACEE;
+  }
+$body-bg: transparent;
