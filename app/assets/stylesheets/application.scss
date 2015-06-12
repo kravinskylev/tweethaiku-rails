@@ -25,10 +25,6 @@ html {
     text-align: center;
   }
 
-.blog {
-    image: url(github.svg);
-  }
-
 .tweethaiku {
     font-family: 'Seaweed Script', cursive;
     display: inline-block;
@@ -52,26 +48,20 @@ ul .navbar {
     text-color:white;
   }
 
-.navbar a:link {
-    color:#FFFFFF;
-  }
-
-
 li {
     display: inline-block;
     margin:0;
     padding:0;
     background-color: #55ACEE;
-    text-color:#FFFFFF;
   }
 
 .nav-item {
     text-color:white;
   }
 
-a:link, a:visited, a:active {
+.navbar a:link, a:visited, a:active {
     text-decoration: none;
-    color: white ;
+    color: #FFFFFF ;
   }
 
 a:hover {
@@ -87,8 +77,20 @@ h4 {
   }
 
 .icon {
-    height: 25px;
-    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.git {
+    padding: 10px;
+  }
+
+a {
+    color: #55ACEE;
+  }
+
+.octicon-arrow-small-up {
+    display:inline-block;
   }
 
 $body-bg: transparent;

@@ -1,11 +1,16 @@
 <% @songs.each do |song| %>
-  <%= link_to song.title, song_path(song) %>
+  <div style="display: inline-block;">
+    <%= button_to "\u2B06", upvote_song_path(song), method: :post, class: "octicon octicon-arrow-small-up" %>
+  </div>
+  <span style="text-color:#55ACEE; font-size:200%;">
+    <%= link_to song.title, song_path(song) %>
   <%= pluralize(song.votes.count, "vote") %>
-  <%= button_to '+1', upvote_song_path(song), method: :post %>
-
+  </span>
 <% if current_user && current_user[:role] == 1 %>
   <%= link_to "New Song", new_song_path %>
   <%= link_to "Edit", edit_song_path(song) %>
   <%= link_to "Delete", song_path(song), method: :delete%>
 <% end %>
 <% end %>
+
+
