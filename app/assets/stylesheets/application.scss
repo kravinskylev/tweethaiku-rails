@@ -10,6 +10,10 @@ html {
     text-align: center;
   }
 
+.blog {
+    image: url(github.svg);
+  }
+
 .tweethaiku {
     font-family: 'Seaweed Script', cursive;
     display: inline-block;
@@ -34,7 +38,7 @@ ul .navbar {
   }
 
 .navbar a:link {
-   color:#FFFFFF;
+    color:#FFFFFF;
   }
 
 
@@ -47,19 +51,29 @@ li {
   }
 
 .nav-item {
-  text-color:white;
-}
+    text-color:white;
+  }
 
 a:link, a:visited, a:active {
-  text-decoration: none;
-  color: white ;
-}
+    text-decoration: none;
+    color: white ;
+  }
 
 a:hover {
-  color:#fdfd96;
-}
+    color:#fdfd96;
+  }
 
 .create a:link {
     color:#55ACEE;
   }
+
+h4 {
+    color:#55ACEE;
+  }
+
+.icon {
+    height: 25px;
+    width: auto;
+  }
+
 $body-bg: transparent;

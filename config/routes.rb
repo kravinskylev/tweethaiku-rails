@@ -13,7 +13,9 @@ Rails.application.routes.draw do
 
   delete 'logout', to: 'sessions#destroy'
 
-  #get '/contact', render template: "views/static/about"
+  get '/about', to: 'static#show'
+
+  get '/connect', to: 'static#new'
 
   root :to => "songs#index"
 end
