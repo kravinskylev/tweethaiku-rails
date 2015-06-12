@@ -7,7 +7,7 @@
   <%= pluralize(song.votes.count, "vote") %>
   </span>
 <% if current_user && current_user[:role] == 1 %>
-  <%= link_to "New Song", new_song_path %>
+  <%= link_to "New Haiku", new_song_path %>
   <%= link_to "Edit", edit_song_path(song) %>
   <%= link_to "Delete", song_path(song), method: :delete%>
 <% end %>

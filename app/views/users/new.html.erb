@@ -1,12 +1,9 @@
 <div class="container" class="pure-form">
 <%= form_for(@user) do |f| %>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %> <br>
+  <%= f.text_field :username, placeholder: "username" %> <br>
+  <%= f.password_field :password, placeholder: "password" %> <br>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %> <br>
-
-  <%= f.submit "Create Account", class: "octicon octicon-arrow-down" %>
+  <%= f.submit "Signup", class: "octicon octicon-arrow-down" %>
 <% end %>
 </div>

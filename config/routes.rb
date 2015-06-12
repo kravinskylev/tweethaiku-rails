@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
   get '/connect', to: 'static#new'
 
+  get '/users', to: 'users#index'
+
   root :to => "songs#index"
 end

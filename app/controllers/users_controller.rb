@@ -17,6 +17,13 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def index
+    if current_user && current_user[:role] == 1
+    else
+      not_found
+    end
+  end
+
 private
 
   def user_params
